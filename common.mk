@@ -74,6 +74,7 @@ PRODUCT_PACKAGES += \
     gdbserver \
     micro_bench \
     oprofiled \
+    Snap \
     sqlite3 \
     strace \
     Terminal
