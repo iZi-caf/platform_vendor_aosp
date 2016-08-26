@@ -76,8 +76,7 @@ PRODUCT_PACKAGES += \
     oprofiled \
     Snap \
     sqlite3 \
-    strace \
-    Terminal
+    strace
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
