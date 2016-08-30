@@ -128,6 +128,20 @@ PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so
 endif
 
+# Charger
+ifneq ($(WITH_CM_CHARGER),false)
+    BOARD_HAL_STATIC_LIBRARIES := libhealthd.cm
+endif
+
+# Custom off-mode charger
+ifneq ($(WITH_CM_CHARGER),false)
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    cm_charger_res_images \
+    font_log.png \
+    libhealthd.cm
+endif
+
 # by default, do not update the recovery with system updates
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 
