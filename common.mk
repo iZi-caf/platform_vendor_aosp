@@ -76,6 +76,7 @@ PRODUCT_PACKAGES += \
     micro_bench \
     oprofiled \
     Snap \
+    SnapdragonMusic \
     sqlite3 \
     strace
 
